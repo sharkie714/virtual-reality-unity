@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 69
+  controlID: 94
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 70
+  controlID: 95
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 71
+  controlID: 96
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Objects
+    - Assets/Objects/piper_pa18_dae
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Objects
+  - Assets/Objects/piper_pa18_dae
   m_LastFoldersGridSize: 57
   m_LastProjectPath: /Users/romi/Documents/Github/virtual_reality_unity/3D Travel
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e300000
-    m_LastClickedID: 12398
-    m_ExpandedIDs: 000000004c2a0000762d0000a82d0000de2d00006e30000076310000c63400003a4a00003c4a00003e4a0000404a0000424a0000444a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 139}
+    m_SelectedIDs: c24d0000
+    m_LastClickedID: 19906
+    m_ExpandedIDs: 000000004c2a0000d42a0000762d0000a82d0000de2d00006e30000076310000c63400003a4a00003c4a00003e4a0000404a0000424a0000444a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -391,8 +391,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000b442000000000000ac310000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000b442000000000000ac310000ec330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -479,10 +479,10 @@ MonoBehaviour:
     height: 265
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 840}
-    m_SelectedIDs: e4f9ffff
-    m_LastClickedID: -1564
-    m_ExpandedIDs: 42fafffff0fbffff00000000a6360000
+    scrollPos: {x: 0, y: 630.003}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9e3cfeff2c84feff3afafeff42faffffeefbfffff0fbffff00000000a6360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -532,14 +532,14 @@ MonoBehaviour:
     height: 265
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1394.8558279275894
+  lastFramingTime: 777.8013479709625
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.5511599, y: 0.33323035, z: 0.26764345}
+    m_Target: {x: 2.830951, y: 0.12639368, z: 0.36953443}
     speed: 2
-    m_Value: {x: 1.5511599, y: 0.33323035, z: 0.26764345}
+    m_Value: {x: 2.830951, y: 0.12639368, z: 0.36953443}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -567,13 +567,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.09375498, y: 0.07906037, z: 0.007468032, w: 0.99243325}
+    m_Target: {x: 0.18244074, y: -0.11768037, z: 0.021994509, w: 0.97591287}
     speed: 2
-    m_Value: {x: -0.09375404, y: 0.07905958, z: 0.007467957, w: 0.9924233}
+    m_Value: {x: 0.18243866, y: -0.11767902, z: 0.021994257, w: 0.9759017}
   m_Size:
-    m_Target: 0.72407055
+    m_Target: 0.49021393
     speed: 2
-    m_Value: 0.72407055
+    m_Value: 0.49021393
   m_Ortho:
     m_Target: 0
     speed: 2
