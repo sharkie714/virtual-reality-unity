@@ -34,7 +34,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 235Mat
-    second: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+    second: {fileID: 2100002, guid: 66dde0e0a537a469e8ba7b6431881440, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -44,12 +44,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Object125Mat
-    second: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+    second: {fileID: 2100002, guid: 66dde0e0a537a469e8ba7b6431881440, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Object126Mat
-    second: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+    second: {fileID: 2100002, guid: 66dde0e0a537a469e8ba7b6431881440, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
