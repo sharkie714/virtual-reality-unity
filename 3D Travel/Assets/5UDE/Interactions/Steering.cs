@@ -32,7 +32,10 @@ public class Steering : MonoBehaviour {
 	public enum SteeringState {
 		NotSteering,
 		SteeringForward,
-		SteeringBackward
+		SteeringBackward,
+        //A2- Adding two new states for steering left & right
+        SteeringLeft,
+        SteeringRight
 	};
 	
     // Inspector parameters
@@ -81,6 +84,19 @@ public class Steering : MonoBehaviour {
 				state = SteeringState.SteeringBackward;
 			}
 
+            //A2 - If the joystick is pressed left and the button is pressed
+            else if (joystick.GetAxis().x < 0.0f && button.GetPress()) {
+                //A2 - change state to SteeringLeft
+                state = SteeringState.SteeringLeft;
+            }
+
+            //A2 - If the joystick is pressed right and the button is pressed
+            else if (joystick.GetAxis().x > 0.0f && button.GetPress())
+            {
+                //A2 - change state to SteeringRight
+                state = SteeringState.SteeringRight;
+            }
+
 			// Process current not steering state
 			else {
 
@@ -97,6 +113,22 @@ public class Steering : MonoBehaviour {
 				// Change state to not steering 
 				state = SteeringState.NotSteering;
 			}
+
+            //A2 - If the joystick is pressed left and the button is pressed
+            else if (joystick.GetAxis().y < 0.0f && button.GetPress())
+            {
+
+                //A2 - Change state to steering left
+                state = SteeringState.SteeringLeft;
+            }
+
+            //A2 - If the joystick is pressed right and the button is pressed
+            else if (joystick.GetAxis().y > 0.0f && button.GetPress())
+            {
+
+                //A2 - Change state to steering left
+                state = SteeringState.SteeringLeft;
+            }
 
 			// If the joystick is pressed backward and the button is pressed
 			else if (joystick.GetAxis ().y < 0.0f && button.GetPress ()) {
@@ -122,6 +154,19 @@ public class Steering : MonoBehaviour {
 				// Change state to not steering 
 				state = SteeringState.NotSteering;
 			}
+
+            //A2 - If the joystick is pressed left and the button is pressed
+            else if (joystick.GetAxis().x < 0.0f && button.GetPress()) {
+                //A2 - Change state to steering left
+                state = SteeringState.SteeringLeft;
+            }
+
+            //A2 - If the joystick is pressed right and the button is pressed
+            else if (joystick.GetAxis().x > 0.0f && button.GetPress())
+            {
+                //A2 - Change state to steering right
+                state = SteeringState.SteeringRight;
+            }
 
 			// If the joystick is pressed forward and the button is pressed
 			else if (joystick.GetAxis ().y > 0.0f && button.GetPress ()) {
