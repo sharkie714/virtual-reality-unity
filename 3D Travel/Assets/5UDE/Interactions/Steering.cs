@@ -71,21 +71,21 @@ public class Steering : MonoBehaviour {
         if (state == SteeringState.NotSteering) {
         
             // If the joystick is pressed forward and the button is pressed
-            if (joystick.GetAxis ().y > 0.0f && button.GetPress () ) {
+            if (joystick.GetAxis ().y > 0.0f && button.GetPress () && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x))) {
 
                 // Change state to steering forward
                 state = SteeringState.SteeringForward;
             }
                 
             // If the joystick is pressed backward and the button is pressed
-            else if (joystick.GetAxis ().y < 0.0f && button.GetPress () ) {
+            else if (joystick.GetAxis ().y < 0.0f && button.GetPress () && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)) ) {
 
                 // Change state to steering backward
                 state = SteeringState.SteeringBackward;
             }
 
             // If the joystick is pressed left and the button is pressed
-            else if (joystick.GetAxis().x < 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().x < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)) )
             {
 
                 // Change state to strafeleft
@@ -93,7 +93,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed right and the button is pressed
-            else if (joystick.GetAxis().x > 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().x > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
             {
 
                 // Change state to strafe right
@@ -120,7 +120,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed left and the button is pressed
-            else if (joystick.GetAxis().x < 0.0f && button.GetPress())
+            else if (joystick.GetAxis().x < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
             {
 
                 // Change state to strafe left
@@ -128,14 +128,14 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed backward and the button is pressed
-            else if (joystick.GetAxis ().y < 0.0f && button.GetPress () ) {
+            else if (joystick.GetAxis ().y < 0.0f && button.GetPress () && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)) ) {
 
                 // Change state to steering backward
                 state = SteeringState.SteeringBackward;
             }
 
             // If the joystick is pressed right and the button is pressed
-            else if (joystick.GetAxis().x > 0.0f && button.GetPress())
+            else if (joystick.GetAxis().x > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
             {
 
                 // Change state to strafe right
@@ -161,15 +161,23 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed left and the button is pressed
-            else if (joystick.GetAxis().x < 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().x < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)) )
             {
 
                 // Change state to strafe left
                 state = SteeringState.StrafeLeft;
             }
 
+            // If the joystick is pressed right and the button is pressed
+            else if (joystick.GetAxis().x > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
+            {
+
+                // Change state to strafe right
+                state = SteeringState.StrafeRight;
+            }
+
             // If the joystick is pressed forward and the button is pressed
-            else if (joystick.GetAxis ().y > 0.0f && button.GetPress () ) {
+            else if (joystick.GetAxis ().y > 0.0f && button.GetPress () && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)) ) {
 
                 // Change state to steering forward
                 state = SteeringState.SteeringForward;
@@ -196,7 +204,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed forward and the button is pressed
-            else if (joystick.GetAxis().y > 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().y > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)) )
             {
 
                 // Change state to steering forward
@@ -204,7 +212,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed backward and the button is pressed
-            else if (joystick.GetAxis().y < 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().y < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)))
             {
 
                 // Change state to steering backward
@@ -212,7 +220,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed right and the button is pressed
-            else if (joystick.GetAxis().x > 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().x > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)) )
             {
 
                 // Change state to strafe right
@@ -241,7 +249,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed forward and the button is pressed
-            else if (joystick.GetAxis().y > 0.0f && button.GetPress())
+            else if (joystick.GetAxis().y > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)))
             {
 
                 // Change state to steering forward
@@ -249,7 +257,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed backward and the button is pressed
-            else if (joystick.GetAxis().y < 0.0f && button.GetPress() )
+            else if (joystick.GetAxis().y < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)) )
             {
 
                 // Change state to steering backward
@@ -257,7 +265,7 @@ public class Steering : MonoBehaviour {
             }
 
             // If the joystick is pressed left and the button is pressed
-            else if (joystick.GetAxis().x < 0.0f && button.GetPress())
+            else if (joystick.GetAxis().x < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
             {
 
                 // Change state to strafing left
