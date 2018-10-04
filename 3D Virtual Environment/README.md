@@ -1,4 +1,6 @@
-3D Virtual Environment presents an interior of a kid’s room where you can find a total of 12 virtual objects. There is a designer wall, two plain white walls, a carpet, a chandelier, a door, a plant, some furniture and toys. Furniture includes a crib, a closet and a bookshelf. Among toys, you can find: an airplane, a car and a cartoon art piece. 
+This project presents an interior of a kid’s room where you can find a total of 12 virtual objects. There is a designer wall, two plain white walls, a carpet, a chandelier, a door, a plant, some furniture and toys. Furniture includes a crib, a closet and a bookshelf. Among toys, you can find: an airplane, a car and a cartoon art piece. 
+
+All the objects are scaled to realistic proportions (1 unit = 1 meter) using the Unity Cube primitive.
 
 Source -
 

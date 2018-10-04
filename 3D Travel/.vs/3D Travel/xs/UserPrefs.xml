@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{B38FB8A1-D8E7-DFDA-0DC1-6837CF876A07}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/5UDE/Interactions/Steering.cs">
     <Files>
       <File FileName="Assets/5UDE/Interactions/Steering.cs" Line="268" Column="141" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+=======
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> 0b7c791100e5b8afb2167257cac7ff7c117083fa
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
