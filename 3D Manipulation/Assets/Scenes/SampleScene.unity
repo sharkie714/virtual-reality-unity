@@ -492,7 +492,7 @@ Prefab:
     - target: {fileID: 114000010258508774, guid: e43af32dbae9d467e869346a2bd6a834,
         type: 2}
       propertyPath: touchpadButton
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
       propertyPath: m_LocalPosition.y
@@ -500,7 +500,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.258
       objectReference: {fileID: 0}
     - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
       propertyPath: m_LocalPosition.z
@@ -512,7 +512,60 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.61
+      value: 1.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012329414808, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.813
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013830230648, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.258
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010258508774, guid: e43af32dbae9d467e869346a2bd6a834,
+        type: 2}
+      propertyPath: touchpadAxis.y
+      value: 0.79
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
@@ -938,10 +991,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracker: {fileID: 390088846}
-  joystick: {fileID: 244320143}
+  joystick: {fileID: 868858096}
   hand: {fileID: 1643210746}
-  button: {fileID: 2095659269}
-  button1: {fileID: 244320141}
+  button: {fileID: 1423318998}
+  button1: {fileID: 1325605879}
   speed: 1
 --- !u!1 &92096005
 GameObject:
@@ -2185,18 +2238,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241315580}
   m_Mesh: {fileID: 4300124, guid: abfaf5ca4c9c049539baf4fbcb5dd63c, type: 3}
---- !u!114 &244320141 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000012317510858, guid: e43af32dbae9d467e869346a2bd6a834,
-    type: 2}
-  m_PrefabInternal: {fileID: 56195241}
-  m_Script: {fileID: 11500000, guid: 845da629d8bcf484eb1b69ddaec234f5, type: 3}
---- !u!114 &244320143 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000011074170670, guid: e43af32dbae9d467e869346a2bd6a834,
-    type: 2}
-  m_PrefabInternal: {fileID: 56195241}
-  m_Script: {fileID: 11500000, guid: df65e55eb5c361b45815ab37e77054b3, type: 3}
 --- !u!1001 &244574419
 Prefab:
   m_ObjectHideFlags: 0
@@ -7204,6 +7245,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862090896}
   m_Mesh: {fileID: 4300026, guid: abfaf5ca4c9c049539baf4fbcb5dd63c, type: 3}
+--- !u!114 &868858096 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011074170670, guid: e43af32dbae9d467e869346a2bd6a834,
+    type: 2}
+  m_PrefabInternal: {fileID: 56195241}
+  m_Script: {fileID: 11500000, guid: df65e55eb5c361b45815ab37e77054b3, type: 3}
 --- !u!1 &880532639
 GameObject:
   m_ObjectHideFlags: 0
@@ -11030,6 +11077,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efb6e8fcbd64e4343ba06db696073ff9, type: 3}
   m_IsPrefabParent: 0
+--- !u!114 &1325605879 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010435013178, guid: e43af32dbae9d467e869346a2bd6a834,
+    type: 2}
+  m_PrefabInternal: {fileID: 56195241}
+  m_Script: {fileID: 11500000, guid: 845da629d8bcf484eb1b69ddaec234f5, type: 3}
 --- !u!1 &1329504424
 GameObject:
   m_ObjectHideFlags: 0
@@ -12063,6 +12116,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1423301173}
   m_Mesh: {fileID: 4300030, guid: 9eb4d689eea78e54da10689d7d578cef, type: 3}
+--- !u!114 &1423318998 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012729560220, guid: e43af32dbae9d467e869346a2bd6a834,
+    type: 2}
+  m_PrefabInternal: {fileID: 56195241}
+  m_Script: {fileID: 11500000, guid: 845da629d8bcf484eb1b69ddaec234f5, type: 3}
 --- !u!1 &1424465022
 GameObject:
   m_ObjectHideFlags: 0
@@ -18703,12 +18762,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092525844}
   m_Mesh: {fileID: 4300072, guid: abfaf5ca4c9c049539baf4fbcb5dd63c, type: 3}
---- !u!114 &2095659269 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000012129250720, guid: e43af32dbae9d467e869346a2bd6a834,
-    type: 2}
-  m_PrefabInternal: {fileID: 56195241}
-  m_Script: {fileID: 11500000, guid: 845da629d8bcf484eb1b69ddaec234f5, type: 3}
 --- !u!1 &2107151281
 GameObject:
   m_ObjectHideFlags: 0

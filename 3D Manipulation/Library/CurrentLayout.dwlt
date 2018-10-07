@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 492}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -65,7 +65,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 2 by 3
+  m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 2455
+  controlID: 121
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 2456
+  controlID: 122
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -288,23 +288,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8efbffff
-    m_LastClickedID: -1138
-    m_ExpandedIDs: b8fbffffeafbffffecfbffffeefbfffff0fbffff0000000026160000
+    m_SelectedIDs: 88fbffff
+    m_LastClickedID: -1144
+    m_ExpandedIDs: b2fbffffe6fbffffe8fbffffeafbffff000000002a160000ba16000098170000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Real World Controller (right)
-      m_OriginalName: Real World Controller (right)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -1128
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
@@ -385,11 +385,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/5UDE/Interactions
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/5UDE/Interactions
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/seshuram1996/Documents/GitHub/virtual_reality_unity/3D
     Manipulation
@@ -397,9 +397,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2090000
-    m_LastClickedID: 2530
-    m_ExpandedIDs: 00000000e20900008c0b00007a0c0000c20d0000f40d00002a0e0000e00f00000410000032130000d0450000d2450000d4450000d6450000d8450000da450000dc450000de45000000ca9a3bffffff7f
+    m_SelectedIDs: 16100000
+    m_LastClickedID: 4118
+    m_ExpandedIDs: 00000000e8090000920b0000800c0000c80d0000fa0d0000300e0000e60f00000a10000038130000d4450000d6450000d8450000da450000dc450000de450000e0450000e245000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -427,7 +427,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e20900008c0b00007a0c0000c20d0000f40d00002a0e0000e00f00000410000032130000d0450000d2450000d4450000d6450000d8450000da450000dc450000de45000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000e8090000920b0000800c0000c80d0000fa0d0000300e0000e60f00000a10000038130000d4450000d6450000d8450000da450000dc450000de450000e0450000e2450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -583,14 +583,14 @@ MonoBehaviour:
     height: 358
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 5713.203726887703
+  lastFramingTime: 1660.9165610074997
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.6343727, y: 10002.357, z: 1.7268105}
+    m_Target: {x: 2.258, y: 10001.779, z: 0.0638005}
     speed: 2
-    m_Value: {x: 2.6343727, y: 10002.357, z: 1.7268105}
+    m_Value: {x: 2.258, y: 10001.779, z: 0.0638005}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -622,9 +622,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 0.7761725
+    m_Target: 4.033394
     speed: 2
-    m_Value: 0.7761725
+    m_Value: 4.033394
   m_Ortho:
     m_Target: 0
     speed: 2

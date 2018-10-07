@@ -26,7 +26,8 @@ MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 using UnityEngine;
 using System.Collections;
 
-public class VirtualHand : MonoBehaviour {
+public class VirtualHand : MonoBehaviour
+{
 
     // Enumerate states of virtual hand interactions
     public enum VirtualHandState
@@ -36,57 +37,61 @@ public class VirtualHand : MonoBehaviour {
         Holding,
         Closed,
         Displace
-	};
+    };
 
-	// Inspector parameters
-	[Tooltip("The tracking device used for tracking the real hand.")]
-	public CommonTracker tracker;
+    // Inspector parameters
+    [Tooltip("The tracking device used for tracking the real hand.")]
+    public CommonTracker tracker;
 
     [Tooltip("The controller joystick used to determine relative direction (forward/backward) and speed.")]
     public CommonAxis joystick;
 
-	[Tooltip("The interactive used to represent the virtual hand.")]
-	public Affect hand;
+    [Tooltip("The interactive used to represent the virtual hand.")]
+    public Affect hand;
 
-	[Tooltip("The button required to be pressed to grab objects.")]
-	public CommonButton button;
+    [Tooltip("The button required to be pressed to grab objects.")]
+    public CommonButton button;
 
     [Tooltip("The button required to be pressed to grab objects.")]
     public CommonButton button1;
 
-	[Tooltip("The speed amplifier for thrown objects. One unit is physically realistic.")]
-	public float speed = 1.0f;
+    [Tooltip("The speed amplifier for thrown objects. One unit is physically realistic.")]
+    public float speed = 1.0f;
 
-	// Private interaction variables
-	VirtualHandState state;
-	FixedJoint grasp;
+    // Private interaction variables
+    VirtualHandState state;
+    FixedJoint grasp;
+    FixedJoint grasp1;
 
-	// Called at the end of the program initialization
-	void Start () {
+    // Called at the end of the program initialization
+    void Start()
+    {
 
-		// Set initial state to open
-		state = VirtualHandState.Open;
+        // Set initial state to open
+        state = VirtualHandState.Open;
 
-		// Ensure hand interactive is properly configured
-		hand.type = AffectType.Virtual;
-	}
+        // Ensure hand interactive is properly configured
+        hand.type = AffectType.Virtual;
+    }
 
-	// FixedUpdate is not called every graphical frame but rather every physics frame
-	void FixedUpdate ()
-	{
+    // FixedUpdate is not called every graphical frame but rather every physics frame
+    void FixedUpdate()
+    {
 
-		// If state is open
-		if (state == VirtualHandState.Open) {
-			
-			// If the hand is touching something
-			if (hand.triggerOngoing) {
+        // If state is open
+        if (state == VirtualHandState.Open)
+        {
 
-				// Change state to touching
-				state = VirtualHandState.Touching;
-			}
+            // If the hand is touching something
+            if (hand.triggerOngoing)
+            {
 
-			// If the hand is closed
-            else if(button.GetPress())
+                // Change state to touching
+                state = VirtualHandState.Touching;
+            }
+
+            // If the hand is closed
+            else if (button.GetPress())
             {
                 // Change state to closed
                 state = VirtualHandState.Closed;
@@ -96,11 +101,12 @@ public class VirtualHand : MonoBehaviour {
             {
                 // do nothing
             }
-		}
+        }
 
         //If state is closed
-        if(state == VirtualHandState.Closed) {
-            if(!button.GetPress())
+        if (state == VirtualHandState.Closed)
+        {
+            if (!button.GetPress())
             {
                 //change state to open
                 state = VirtualHandState.Open;
@@ -113,89 +119,56 @@ public class VirtualHand : MonoBehaviour {
 
         }
 
-		// If state is touching
-		else if (state == VirtualHandState.Touching) {
+        // If state is touching
+        else if (state == VirtualHandState.Touching)
+        {
 
-			// If the hand is not touching something
-			if (!hand.triggerOngoing) {
+            // If the hand is not touching something
+            if (!hand.triggerOngoing)
+            {
 
-				// Change state to open
-				state = VirtualHandState.Open;
-			}
-
-			// If the hand is touching something and the button is pressed
-			else if (hand.triggerOngoing && button.GetPress ()) {
-
-				// Fetch touched target
-				Collider target = hand.ongoingTriggers [0];
-				// Create a fixed joint between the hand and the target
-				grasp = target.gameObject.AddComponent<FixedJoint> ();
-				// Set the connection
-				grasp.connectedBody = hand.gameObject.GetComponent<Rigidbody> ();
-
-				// Change state to holding
-				state = VirtualHandState.Holding;
-			}
-
-			// Process current touching state
-			else {
-
-				// Nothing to do for touching
-			}
-		}
-
-		// If state is holding
-		else if (state == VirtualHandState.Holding) {
-
-			// If grasp has been broken
-			if (grasp == null) {
-				
-				// Update state to open
-				state = VirtualHandState.Open;
-			}
-				
-			// If button has been released and grasp still exists
-			else if (!button.GetPress () && grasp != null) {
-
-				// Get rigidbody of grasped target
-				Rigidbody target = grasp.GetComponent<Rigidbody> ();
-				// Break grasp
-				DestroyImmediate (grasp);
-
-				// Apply physics to target in the event of attempting to throw it
-				target.velocity = hand.velocity * speed;
-				target.angularVelocity = hand.angularVelocity * speed;
-
-				// Update state to open
-				state = VirtualHandState.Open;
-			}
-
-            // If displace button is pressed along with grasp and trigger button
-            else if (button1.GetPress() && grasp!= null && button.GetPress()){
-
-                //update state to displace
-                state = VirtualHandState.Displace;
+                // Change state to open
+                state = VirtualHandState.Open;
             }
 
-			// Process current holding state
-			else {
+            // If the hand is touching something and the button is pressed
+            else if (hand.triggerOngoing && button.GetPress())
+            {
 
-				// Nothing to do for holding
-			}
-		}
+                // Fetch touched target
+                Collider target = hand.ongoingTriggers[0];
+                // Create a fixed joint between the hand and the target
+                grasp = target.gameObject.AddComponent<FixedJoint>();
+                // Set the connection
+                grasp.connectedBody = hand.gameObject.GetComponent<Rigidbody>();
 
-        // if state is displacing 
-        else if (state == VirtualHandState.Displace) {
+                // Change state to holding
+                state = VirtualHandState.Holding;
+            }
 
-            // if grasp has been broken
+            // Process current touching state
+            else
+            {
+
+                // Nothing to do for touching
+            }
+        }
+
+        // If state is holding
+        else if (state == VirtualHandState.Holding)
+        {
+
+            // If grasp has been broken
             if (grasp == null)
             {
-                // update state to open
+
+                // Update state to open
                 state = VirtualHandState.Open;
             }
 
             // If button has been released and grasp still exists
-            else if (!button.GetPress() && grasp != null ) {
+            else if (!button.GetPress() && grasp != null)
+            {
 
                 // Get rigidbody of grasped target
                 Rigidbody target = grasp.GetComponent<Rigidbody>();
@@ -210,19 +183,90 @@ public class VirtualHand : MonoBehaviour {
                 state = VirtualHandState.Open;
             }
 
-            // if displace button has been released
-            else if(!button1.GetPress() && grasp != null && button.GetPress())
-            {
-                // change state to holding
-                state = VirtualHandState.Holding;
-            }
-            // Process current displacing state
-            else 
+            // If displace button is pressed along with grasp and trigger button
+            else if (button1.GetPress() && grasp != null && button.GetPress())
             {
 
-                //change the place of hold
-                tracker.transform.position += joystick.GetAxis().x * tracker.transform.right * speed * Time.deltaTime;
+                //update state to delete
+                state = VirtualHandState.Displace;
+            }
+
+            // Process current holding state
+            else
+            {
+
+                // Nothing to do for holding
             }
         }
-	}
+
+        // if state is displacing
+        else if (state == VirtualHandState.Displace){
+
+
+            // If grasp has been broken
+            if (grasp == null)
+            {
+
+                // Update state to open
+                state = VirtualHandState.Open;
+            }
+
+
+            // If button has been released and grasp still exists
+            else if (!button.GetPress() && grasp != null)
+            {
+
+                // Get rigidbody of grasped target
+                Rigidbody target = grasp.GetComponent<Rigidbody>();
+                // Break grasp
+
+                DestroyImmediate(grasp);
+
+                // Apply physics to target in the event of attempting to throw it
+                target.velocity = hand.velocity * speed;
+                target.angularVelocity = hand.angularVelocity * speed;
+
+                // Update state to open
+                state = VirtualHandState.Open;
+            }
+
+            //If displace button has been released
+            else if (button.GetPress() && !button1.GetPress())
+            {
+                state = VirtualHandState.Holding;
+            }
+
+
+            else
+            {
+                
+                Rigidbody target = grasp.GetComponent<Rigidbody>();
+                DestroyImmediate(grasp);
+
+                if (joystick.GetAxis().y < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)))
+                    hand.transform.position += joystick.GetAxis().y * tracker.transform.forward * speed * Time.deltaTime;
+
+                else if (joystick.GetAxis().y > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) > Mathf.Abs(joystick.GetAxis().x)))
+                    hand.transform.position += joystick.GetAxis().y * tracker.transform.forward * speed * Time.deltaTime;
+
+                else if (joystick.GetAxis().x < 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
+                    hand.transform.position += joystick.GetAxis().x * tracker.transform.right * speed * Time.deltaTime;
+
+                else if (joystick.GetAxis().x > 0.0f && button.GetPress() && (Mathf.Abs(joystick.GetAxis().y) < Mathf.Abs(joystick.GetAxis().x)))
+                    hand.transform.position += joystick.GetAxis().x * tracker.transform.right * speed * Time.deltaTime;
+
+                grasp = target.gameObject.AddComponent<FixedJoint>();
+
+                // Set the connection
+                grasp.connectedBody = hand.gameObject.GetComponent<Rigidbody>();
+
+                // Change state to holding
+                state = VirtualHandState.Holding;
+
+            }
+
+
+
+        }
+    }
 }
