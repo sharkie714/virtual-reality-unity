@@ -898,6 +898,7 @@ MeshFilter:
   m_GameObject: {fileID: 86870048}
   m_Mesh: {fileID: 4300102, guid: abfaf5ca4c9c049539baf4fbcb5dd63c, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &88230333
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +945,8 @@ MonoBehaviour:
   button: {fileID: 2095659269}
   button1: {fileID: 244320141}
   speed: 1
+=======
+>>>>>>> parent of 0b7c791... interactions added to five objects
 =======
 >>>>>>> parent of 0b7c791... interactions added to five objects
 --- !u!1 &92096005

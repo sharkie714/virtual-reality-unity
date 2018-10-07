@@ -100,6 +100,9 @@ MonoBehaviour:
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
   controlID: 2159
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
 --- !u!114 &5
 MonoBehaviour:
@@ -131,6 +134,8 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
   m_Name: 
   m_EditorClassIdentifier: 
@@ -167,6 +172,51 @@ MonoBehaviour:
     x: 426
     y: 0
 <<<<<<< HEAD
+    width: 426
+    height: 557
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
+  vertical: 1
+  controlID: 2160
+--- !u!114 &7
+=======
+    width: 204
+    height: 557
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &8
+>>>>>>> parent of 0b7c791... interactions added to five objects
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 11}
+=======
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+>>>>>>> parent of 0b7c791... interactions added to five objects
+  m_Position:
+    serializedVersion: 2
+    x: 426
+    y: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
     width: 653
     height: 739
   m_MinSize: {x: 202, y: 442}
@@ -185,6 +235,18 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &8
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
+    width: 234
+    height: 557
+  m_MinSize: {x: 234, y: 271}
+  m_MaxSize: {x: 10004, y: 10021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
 >>>>>>> parent of 0b7c791... interactions added to five objects
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,6 +277,7 @@ MonoBehaviour:
 =======
     width: 234
     height: 557
+<<<<<<< HEAD
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 14}
@@ -223,6 +286,16 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &10
 >>>>>>> parent of 0b7c791... interactions added to five objects
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,6 +312,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 884
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 234
     height: 739
@@ -283,11 +357,14 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 13}
 =======
+=======
+>>>>>>> parent of 0b7c791... interactions added to five objects
     width: 426
     height: 286
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
+<<<<<<< HEAD
   m_Panes:
   - {fileID: 16}
 >>>>>>> parent of 0b7c791... interactions added to five objects
@@ -383,6 +460,13 @@ MonoBehaviour:
     m_IsLocked: 0
   m_CurrentSortingName: TransformSorting
 --- !u!114 &13
+=======
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &11
+>>>>>>> parent of 0b7c791... interactions added to five objects
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -397,9 +481,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 379
     width: 653
     height: 360
+=======
+    y: 286
+    width: 426
+    height: 271
+>>>>>>> parent of 0b7c791... interactions added to five objects
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -427,6 +517,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 655
     y: 94
     width: 227
@@ -441,13 +532,33 @@ MonoBehaviour:
       m_UserAcceptedRename: 0
       m_Name: Real World Controller (right)
       m_OriginalName: Real World Controller (right)
+=======
+    x: 439
+    y: 93
+    width: 200
+    height: 536
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 41}
+    m_SelectedIDs: ae3b0000
+    m_LastClickedID: 15278
+    m_ExpandedIDs: f0fbffff000000008c3500000c370000ea370000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: Musical Box
+      m_OriginalName: Musical Box
+>>>>>>> parent of 0b7c791... interactions added to five objects
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< HEAD
       m_UserData: -1128
+=======
+      m_UserData: 15200
+>>>>>>> parent of 0b7c791... interactions added to five objects
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -524,6 +635,9 @@ MonoBehaviour:
     y: 93
     width: 230
     height: 536
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -611,6 +725,9 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 0
 =======
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -637,7 +754,11 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 0}
+=======
+    m_ScrollPosition: {x: 0, y: 266}
+>>>>>>> parent of 0b7c791... interactions added to five objects
 =======
     m_ScrollPosition: {x: 0, y: 266}
 >>>>>>> parent of 0b7c791... interactions added to five objects
@@ -664,15 +785,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 473
     width: 651
     height: 339
 =======
+=======
+>>>>>>> parent of 0b7c791... interactions added to five objects
     x: 11
     y: 379
     width: 424
     height: 250
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
@@ -684,15 +811,21 @@ MonoBehaviour:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -162.75
     m_HBaseRangeMax: 162.75
     m_VBaseRangeMin: -80.5
     m_VBaseRangeMax: 80.5
 =======
+=======
+>>>>>>> parent of 0b7c791... interactions added to five objects
     m_HBaseRangeMin: -212
     m_HBaseRangeMax: 212
     m_VBaseRangeMin: -116.5
     m_VBaseRangeMax: 116.5
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -711,15 +844,21 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 651
       height: 322
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 325.5, y: 161}
 =======
+=======
+>>>>>>> parent of 0b7c791... interactions added to five objects
       width: 424
       height: 233
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 212, y: 116.5}
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -728,22 +867,32 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -162.75
       y: -80.5
       width: 325.5
       height: 161
 =======
+=======
+>>>>>>> parent of 0b7c791... interactions added to five objects
       x: -212
       y: -116.5
       width: 424
       height: 233
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1302, y: 678}
+=======
+  m_LastWindowPixelSize: {x: 424, y: 250}
+>>>>>>> parent of 0b7c791... interactions added to five objects
 =======
   m_LastWindowPixelSize: {x: 424, y: 250}
 >>>>>>> parent of 0b7c791... interactions added to five objects
@@ -786,15 +935,24 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 2634.5913519859314
+<<<<<<< HEAD
+>>>>>>> parent of 0b7c791... interactions added to five objects
+=======
 >>>>>>> parent of 0b7c791... interactions added to five objects
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 2.6343727, y: 10002.357, z: 1.7268105}
     speed: 2
     m_Value: {x: 2.6343727, y: 10002.357, z: 1.7268105}
+=======
+    m_Target: {x: 2.0059342, y: 0.14781737, z: -1.6802883}
+    speed: 2
+    m_Value: {x: 2.0059342, y: 0.14781737, z: -1.6802883}
+>>>>>>> parent of 0b7c791... interactions added to five objects
 =======
     m_Target: {x: 2.0059342, y: 0.14781737, z: -1.6802883}
     speed: 2
@@ -828,6 +986,7 @@ MonoBehaviour:
       m_Value: 0
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
@@ -835,6 +994,15 @@ MonoBehaviour:
     m_Target: 0.7761725
     speed: 2
     m_Value: 0.7761725
+=======
+    m_Target: {x: -0.00037848833, y: 0.9873346, z: -0.15863577, w: -0.00235311}
+    speed: 2
+    m_Value: {x: -0.00037848824, y: 0.9873344, z: -0.15863572, w: -0.0023531094}
+  m_Size:
+    m_Target: 1.5664036
+    speed: 2
+    m_Value: 1.5664036
+>>>>>>> parent of 0b7c791... interactions added to five objects
 =======
     m_Target: {x: -0.00037848833, y: 0.9873346, z: -0.15863577, w: -0.00235311}
     speed: 2
